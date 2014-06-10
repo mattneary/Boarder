@@ -19,8 +19,7 @@
 		AD3B024319467DA400B99DAF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3B024219467DA400B99DAF /* XCTest.framework */; };
 		AD3B024419467DA400B99DAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3B022319467DA400B99DAF /* Foundation.framework */; };
 		AD3B024519467DA400B99DAF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3B022719467DA400B99DAF /* UIKit.framework */; };
-		AD3B024D19467DA400B99DAF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD3B024B19467DA400B99DAF /* InfoPlist.strings */; };
-		AD3B024F19467DA400B99DAF /* BoarderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3B024E19467DA400B99DAF /* BoarderTests.m */; };
+		AD3B025919467DC200B99DAF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3B025819467DC200B99DAF /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +49,7 @@
 		AD3B023B19467DA400B99DAF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AD3B024119467DA400B99DAF /* BoarderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoarderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3B024219467DA400B99DAF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		AD3B024A19467DA400B99DAF /* BoarderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BoarderTests-Info.plist"; sourceTree = "<group>"; };
-		AD3B024C19467DA400B99DAF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AD3B024E19467DA400B99DAF /* BoarderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoarderTests.m; sourceTree = "<group>"; };
+		AD3B025819467DC200B99DAF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD3B025919467DC200B99DAF /* CoreLocation.framework in Frameworks */,
 				AD3B022619467DA400B99DAF /* CoreGraphics.framework in Frameworks */,
 				AD3B022819467DA400B99DAF /* UIKit.framework in Frameworks */,
 				AD3B022419467DA400B99DAF /* Foundation.framework in Frameworks */,
@@ -83,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				AD3B022919467DA400B99DAF /* Boarder */,
-				AD3B024819467DA400B99DAF /* BoarderTests */,
 				AD3B022219467DA400B99DAF /* Frameworks */,
 				AD3B022119467DA400B99DAF /* Products */,
 			);
@@ -101,6 +98,7 @@
 		AD3B022219467DA400B99DAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AD3B025819467DC200B99DAF /* CoreLocation.framework */,
 				AD3B022319467DA400B99DAF /* Foundation.framework */,
 				AD3B022519467DA400B99DAF /* CoreGraphics.framework */,
 				AD3B022719467DA400B99DAF /* UIKit.framework */,
@@ -130,24 +128,6 @@
 				AD3B022C19467DA400B99DAF /* InfoPlist.strings */,
 				AD3B022F19467DA400B99DAF /* main.m */,
 				AD3B023119467DA400B99DAF /* Boarder-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AD3B024819467DA400B99DAF /* BoarderTests */ = {
-			isa = PBXGroup;
-			children = (
-				AD3B024E19467DA400B99DAF /* BoarderTests.m */,
-				AD3B024919467DA400B99DAF /* Supporting Files */,
-			);
-			path = BoarderTests;
-			sourceTree = "<group>";
-		};
-		AD3B024919467DA400B99DAF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AD3B024A19467DA400B99DAF /* BoarderTests-Info.plist */,
-				AD3B024B19467DA400B99DAF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -238,7 +218,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3B024D19467DA400B99DAF /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +238,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3B024F19467DA400B99DAF /* BoarderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,14 +266,6 @@
 				AD3B023619467DA400B99DAF /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AD3B024B19467DA400B99DAF /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD3B024C19467DA400B99DAF /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
