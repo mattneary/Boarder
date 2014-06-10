@@ -1,11 +1,3 @@
-//
-//  ViewController.m
-//  Boarder
-//
-//  Created by Matt Neary on 6/9/14.
-//  Copyright (c) 2014 lambdalabs. All rights reserved.
-//
-
 #import "ViewController.h"
 
 @implementation ViewController
